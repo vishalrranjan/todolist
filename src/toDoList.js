@@ -18,14 +18,12 @@ function ToDoList() {
   const inputHandler = e => {
     let item = e.target.value;
     setNewItem(item);
-    console.log(item);
   };
 
   // add button function
   const submitHandler = () => {
     setItems([...items, newItem]);
-    setNewItem(" ");
-    console.log("input item", newItem);
+    setNewItem("");
   };
 
   return (
